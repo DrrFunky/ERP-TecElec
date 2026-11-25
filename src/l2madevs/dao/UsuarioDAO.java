@@ -34,7 +34,7 @@ public class UsuarioDAO {
                 if (!rs.next()) {
                     return null;
                 }
-                String almacenada = rs.getString("contraseña");
+                String almacenada = rs.getString("contrasena");
                 boolean valido = PasswordHasher.esHash(almacenada)
                         ? PasswordHasher.verificar(contrasena, almacenada)
                         : contrasena != null && contrasena.equals(almacenada);
@@ -63,7 +63,7 @@ public class UsuarioDAO {
     }
 
     public void actualizarContrasena(int idUsuario, String hash) throws SQLException {
-        String sql = "UPDATE usuario SET contraseña = ? WHERE id_usuario = ?";
+        String sql = "UPDATE usuario SET contrasena = ? WHERE id_usuario = ?";
         try (Connection conn = ConexionBD.getConexion();
                 PreparedStatement pst = conn.prepareStatement(sql)) {
             pst.setString(1, hash);
@@ -105,7 +105,7 @@ public class UsuarioDAO {
     public Usuario crearCliente(Connection conn, Usuario cliente) throws SQLException {
         String sql = "INSERT INTO usuario "
                 + "(id_rol, nombre, a_paterno, a_materno, correo, "
-                + "fecha_creacion_usuario, direccion, telefono, contraseña, usuario_login) "
+                + "fecha_creacion_usuario, direccion, telefono, contrasena, usuario_login) "
                 + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, NULL, NULL)";
 
         try (PreparedStatement pst = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {

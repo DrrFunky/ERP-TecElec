@@ -66,14 +66,14 @@ El script crea la base `adte`, las seis tablas y datos de ejemplo. Consulta [doc
 
 Por defecto se usa:
 
-- URL: `jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC`
+- URL: `jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8`
 - Usuario: `root`
 - Contraseña: `root`
 
 Puedes cambiarlo sin tocar el código con variables de entorno:
 
 ```bat
-set DB_URL=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+set DB_URL=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
 set DB_USER=root
 set DB_PASSWORD=root
 ```

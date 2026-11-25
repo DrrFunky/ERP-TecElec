@@ -68,7 +68,7 @@ erDiagram
         int id_usuario PK
         int id_rol FK
         string usuario_login
-        string contraseña "PBKDF2 o legacy"
+        string contrasena "PBKDF2 o legacy"
     }
     REGISTRO_DE_SOLICITUD {
         int id_solicitud PK

@@ -7,7 +7,8 @@
 --   * La base de datos se llama `adte`, igual que la URL JDBC por defecto.
 --   * `fecha_fin` y `fecha_realizar_trabajo` aceptan NULL: una solicitud
 --     recién creada todavía no tiene fecha de finalización.
---   * `contraseña` admite hashes PBKDF2 (255 caracteres) en vez de texto plano.
+--   * `contrasena` admite hashes PBKDF2 (255 caracteres) en vez de texto plano.
+--     Se usa nombre ASCII para evitar problemas de codificación al importar.
 --   * Los IDs son AUTO_INCREMENT y las claves foranes se declaran al crear
 --     cada tabla, en lugar de añadirlas después.
 
@@ -60,7 +61,7 @@ CREATE TABLE `usuario` (
     `a_paterno` VARCHAR(45) NOT NULL,
     `a_materno` VARCHAR(45) NOT NULL,
     `correo` VARCHAR(45) NOT NULL,
-    `contraseña` VARCHAR(255) DEFAULT NULL,
+    `contrasena` VARCHAR(255) DEFAULT NULL,
     `fecha_creacion_usuario` DATETIME NOT NULL,
     `direccion` VARCHAR(45) NOT NULL,
     `telefono` VARCHAR(45) NOT NULL,
@@ -126,7 +127,7 @@ INSERT INTO `tipo_de_solicitud` (`id_tipo_solicitud`, `descripcion_tipo_solicitu
 -- cgomez / pass123  y  lperez / tech456.
 INSERT INTO `usuario`
     (`id_usuario`, `id_rol`, `nombre`, `a_paterno`, `a_materno`, `correo`,
-     `contraseña`, `fecha_creacion_usuario`, `direccion`, `telefono`, `usuario_login`) VALUES
+     `contrasena`, `fecha_creacion_usuario`, `direccion`, `telefono`, `usuario_login`) VALUES
     (1, 1, 'Carlos', 'Gomez', 'Rojas', 'carlos.gomez@example.com',
      'PBKDF2$120000$sG4imeAPpiLgbzWiijQJeg==$5/jg/WQi8hPVWRFgMa6Ar+W4qam+IbB/dCw8O4MZKio=',
      '2025-01-05 10:35:00', 'Av. Central 123', '987654321', 'cgomez'),

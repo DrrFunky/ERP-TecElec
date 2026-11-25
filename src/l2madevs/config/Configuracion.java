@@ -11,7 +11,7 @@ package l2madevs.config;
 public final class Configuracion {
 
     private static final String URL_POR_DEFECTO =
-            "jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            "jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8";
     private static final String USUARIO_POR_DEFECTO = "root";
     private static final String CONTRASENA_POR_DEFECTO = "root";
 

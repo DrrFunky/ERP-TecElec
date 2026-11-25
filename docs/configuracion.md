@@ -13,17 +13,26 @@ Esta guía explica cómo dejar la aplicación lista en una máquina nueva, sin e
 
 El script `database/adte.sql` crea la base `adte`, las tablas y los datos de ejemplo.
 
-Desde la raíz del repositorio:
-
-```bat
-mysql -u root -p < database\adte.sql
-```
-
-Si `mysql` no está en el PATH, usa la ruta completa a tu cliente MySQL, por ejemplo:
+Desde la raíz del repositorio, en **CMD**:
 
 ```bat
 "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p < database\adte.sql
 ```
+
+En **PowerShell** (que no admite `<`) usa `Get-Content` con UTF-8:
+
+```powershell
+Get-Content -Raw -Encoding UTF8 'database\adte.sql' |
+    & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' -u root -p
+```
+
+También puedes entrar al cliente y usar `SOURCE`:
+
+```sql
+SOURCE C:/Users/Alonso/Documents/L2MADevs/L2MADevs-Portfolio/database/adte.sql
+```
+
+> El script usa el nombre de columna ASCII `contrasena` (sin `ñ`) a propósito: así evita problemas de codificación entre PowerShell, CMD y MySQL. Si importaste una versión anterior con `contraseña`, vuelve a importar el script actual.
 
 ### Usuarios incluidos en el script
 
@@ -44,14 +53,14 @@ Los clientes (`María`, `José`) no inician sesión: se crean desde el formulari
 
 | Concepto | Propiedad | Variable de entorno | Valor por defecto |
 | --- | --- | --- | --- |
-| URL JDBC | `db.url` | `DB_URL` | `jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC` |
+| URL JDBC | `db.url` | `DB_URL` | `jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8` |
 | Usuario | `db.usuario` | `DB_USER` | `root` |
 | Contraseña | `db.contrasena` | `DB_PASSWORD` | `root` |
 
 ### Opción A: variables de entorno (CMD)
 
 ```bat
-set DB_URL=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+set DB_URL=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
 set DB_USER=root
 set DB_PASSWORD=root
 scripts\ejecutar.bat
@@ -72,7 +81,7 @@ scripts\ejecutar.bat -Ddb.url=jdbc:mysql://localhost:3307/adte?useSSL=false -Ddb
 3. En **VM Options** escribe, por ejemplo:
 
 ```text
--Ddb.url=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC -Ddb.usuario=root -Ddb.contrasena=root
+-Ddb.url=jdbc:mysql://localhost:3306/adte?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8 -Ddb.usuario=root -Ddb.contrasena=root
 ```
 
 4. Ejecuta **Run Project**. `main.class` ya apunta a `l2madevs.L2MADevs`.
