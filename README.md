@@ -10,11 +10,11 @@ Este repositorio es una versión preparada para **portafolio**: conserva la arqu
 
 ## Equipo
 
-| Integrante | Usuario de GitHub | Rol |
-| --- | --- | --- |
-| [@DrrFunky](https://github.com/DrrFunky) | `DrrFunky` | Autor y mantenimiento |
-| Lucas Benítez | [@Ariel1224L](https://github.com/Ariel1224L) | Colaborador |
-| Martín Durán | [@Kuzub0](https://github.com/Kuzub0) | Colaborador |
+| Integrante | Usuario de GitHub |
+| --- | --- |
+| [@DrrFunky](https://github.com/DrrFunky) | `DrrFunky` |
+| Lucas Benítez | [@Ariel1224L](https://github.com/Ariel1224L) |
+| Martín Durán | [@Kuzub0](https://github.com/Kuzub0) |
 
 ## Tecnologías
 
@@ -109,10 +109,10 @@ También puedes abrir la carpeta como proyecto en NetBeans y usar **Run Project*
 
 ### 5. Usuarios de prueba
 
-| Usuario | Contraseña |
-| --- | --- |
-| `cgomez` | `pass123` |
-| `lperez` | `tech456` |
+| Usuario | Contraseña | Rol |
+| --- | --- | --- |
+| `cgomez` | `pass123` | Gestor |
+| `lperez` | `tech456` | Técnico |
 
 Las contraseñas del script SQL están hasheadas con PBKDF2-HMAC-SHA256. Si tu base antigua todavía tiene contraseñas en texto plano, el login las migrará automáticamente al primer inicio de sesión correcto.
 
