@@ -12,9 +12,10 @@ Este repositorio es una versión preparada para **portafolio**: conserva la arqu
 
 | Integrante | Usuario de GitHub |
 | --- | --- |
-| [@DrrFunky](https://github.com/DrrFunky) | `DrrFunky` |
+| Alonso Plane | [@DrrFunky](https://github.com/DrrFunky) |
 | Lucas Benítez | [@Ariel1224L](https://github.com/Ariel1224L) |
 | Martín Durán | [@Kuzub0](https://github.com/Kuzub0) |
+| Martín Garrido | [@GuFfy0921](https://github.com/GuFfy0921)) |
 
 ## Tecnologías
 
