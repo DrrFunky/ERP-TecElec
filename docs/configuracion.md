@@ -76,7 +76,7 @@ scripts\ejecutar.bat -Ddb.url=jdbc:mysql://localhost:3307/adte?useSSL=false -Ddb
 
 ### Opción C: NetBeans
 
-1. Abre la carpeta `L2MADevs-Portfolio` como proyecto.
+1. Abre la carpeta `L2MADevs-Portfolio` como proyecto. NetBeans lo mostrará con el nombre **ERP-TecElec**.
 2. Clic derecho en el proyecto → **Properties** → **Run**.
 3. En **VM Options** escribe, por ejemplo:
 

@@ -1,8 +1,20 @@
-# L2MADevs — Gestión de solicitudes técnicas
+# ERP-TecElec — Gestión de solicitudes técnicas
+
+**Repositorio:** https://github.com/DrrFunky/ERP-TecElec
 
 Proyecto universitario de **Java Swing** para administrar solicitudes de soporte/proyectos eléctricos: alta de clientes y solicitudes, asignación de técnicos, cambio de estados e historial persistido.
 
 Este repositorio es una versión preparada para **portafolio**: conserva la arquitectura original (Swing + DAO + NetBeans/Ant) pero corrige errores funcionales, externaliza la configuración, añade seguridad básica, transacciones, pruebas automatizadas y documentación.
+
+> El nombre visible del proyecto es **ERP-TecElec**. El paquete Java sigue siendo `l2madevs` y la clase principal `l2madevs.L2MADevs` para mantener la compatibilidad con el código original.
+
+## Equipo
+
+| Integrante | Usuario de GitHub | Rol |
+| --- | --- | --- |
+| [@DrrFunky](https://github.com/DrrFunky) | `DrrFunky` | Autor y mantenimiento |
+| Lucas Benítez | [@Ariel1224L](https://github.com/Ariel1224L) | Colaborador |
+| Martín Durán | [@Kuzub0](https://github.com/Kuzub0) | Colaborador |
 
 ## Tecnologías
 
@@ -19,7 +31,7 @@ Este repositorio es una versión preparada para **portafolio**: conserva la arqu
 ## Estructura
 
 ```text
-L2MADevs-Portfolio/
+ERP-TecElec/                   # Carpeta local: L2MADevs-Portfolio
 ├── database/adte.sql          # Esquema corregido + datos de ejemplo
 ├── docs/
 │   ├── arquitectura.md        # Diagramas Mermaid y responsabilidades

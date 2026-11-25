@@ -1,4 +1,4 @@
--- Esquema y datos de ejemplo de L2MADevs.
+-- Esquema y datos de ejemplo de ERP-TecElec.
 --
 -- Forma de restauración:
 --   mysql -u root -p < database/adte.sql
