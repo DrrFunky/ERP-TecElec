@@ -1,0 +1,32 @@
+# Artefactos generados
+build/
+dist/
+nbbuild/
+nbdist/
+*.class
+*.jar.orig
+
+# Configuración privada de NetBeans
+nbproject/private/
+nbproject/build-impl.xml.bak
+
+# IDE / sistema operativo
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs y archivos locales
+*.log
+*.tmp
+*.bak
+*.rar
+*.zip
+.env
+.env.*
+!*.example
+
+# No versionar secretos ni dumps locales distintos al script oficial
+*.sql.bak
