@@ -109,10 +109,10 @@ También puedes abrir la carpeta como proyecto en NetBeans y usar **Run Project*
 
 ### 5. Usuarios de prueba
 
-| Usuario | Contraseña | Rol |
-| --- | --- | --- |
-| `cgomez` | `pass123` | Gestor |
-| `lperez` | `tech456` | Técnico |
+| Usuario | Contraseña |
+| --- | --- |
+| `cgomez` | `pass123` |
+| `lperez` | `tech456` |
 
 Las contraseñas del script SQL están hasheadas con PBKDF2-HMAC-SHA256. Si tu base antigua todavía tiene contraseñas en texto plano, el login las migrará automáticamente al primer inicio de sesión correcto.
 
