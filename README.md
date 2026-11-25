@@ -13,7 +13,7 @@ Este repositorio es una versión preparada para el **portafolio**: conserva la a
 | Integrante | Usuario de GitHub |
 | --- | --- |
 | Alonso Plane | [@DrrFunky](https://github.com/DrrFunky) |
-| Lucas Benítez | [@Ariel1224L](https://github.com/lbenitezinformatico) |
+| Lucas Benítez | [@lbenitezinformatico](https://github.com/lbenitezinformatico) |
 | Martín Durán | [@Kuzub0](https://github.com/Kuzub0) |
 | Martín Garrido | [@GuFfy0921](https://github.com/GuFfy0921) |
 
