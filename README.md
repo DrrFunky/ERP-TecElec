@@ -2,9 +2,9 @@
 
 **Repositorio:** https://github.com/DrrFunky/ERP-TecElec
 
-Proyecto universitario de **Java Swing** para administrar solicitudes de soporte/proyectos eléctricos: alta de clientes y solicitudes, asignación de técnicos, cambio de estados e historial persistido.
+Proyecto universitario de **Java Swing** para gestionar solicitudes de soporte y proyectos eléctricos: alta de clientes y solicitudes, asignación de técnicos, cambio de estados e historial persistido.
 
-Este repositorio es una versión preparada para **portafolio**: conserva la arquitectura original (Swing + DAO + NetBeans/Ant) pero corrige errores funcionales, externaliza la configuración, añade seguridad básica, transacciones, pruebas automatizadas y documentación.
+Este repositorio es una versión preparada para el **portafolio**: conserva la arquitectura original (Swing + DAO + NetBeans/Ant) pero corrige errores funcionales, externaliza la configuración, añade seguridad básica, transacciones, pruebas automatizadas y documentación.
 
 > El nombre visible del proyecto es **ERP-TecElec**. El paquete Java sigue siendo `l2madevs` y la clase principal `l2madevs.L2MADevs` para mantener la compatibilidad con el código original.
 
